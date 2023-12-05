@@ -16,9 +16,18 @@ numbers(1, 20);
 
 //Create a function that sums the values in-between two numbers. eg calcFunc(1,3) returns 6. ie. 1+2+3.
 
+//function calcFuncBetween(x, y) {
+//  let Sum = 0;
+//  for (let i = y; i >= x; i--) {
+//    Sum += i;
+//  }
+//  return Sum;
+//}
+//console.log(calcFuncBetween(0, 8));
+
 function calcFuncBetween(x, y) {
   let Sum = 0;
-  for (let i = y; i >= x; i--) {
+  for (let i = x; i <= y; i++) {
     Sum += i;
   }
   return Sum;
