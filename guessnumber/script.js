@@ -3,15 +3,16 @@
 //Allow the user to guess the number and provide feedback on whether the guess is too high, too low, or correct.
 //without using prompt
 // Generate a Random Number
+
 function guessNumber(y) {
   let x = Math.floor(Math.random() * 100 + 1);
-  console.log(x);
+  // console.log(x);
   if (y == x) {
-    return `CONGRATULATIONS!YOU'RE CORRECT`;
+    return `CONGRATULATIONS!you guessed the right number, ${x}`;
   } else if (y > x) {
-    return `${y} is too high`;
+    return `${y} is higher than ${x}`;
   } else {
-    return `${y} is too low`;
+    return `${y} is too low than ${x}`;
   }
 }
-console.log(guessNumber(50));
+console.log(guessNumber(29));
